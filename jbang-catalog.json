@@ -1,0 +1,10 @@
+{
+  "catalogs": {},
+  "aliases": {
+    "mcp-proxy": {
+      "script-ref": "io.quarkiverse.mcp:quarkus-mcp-stdio-sse-proxy:1.0.0.CR1@fatjar",
+      "java": "17"
+    }
+  },
+  "templates": {}
+}
