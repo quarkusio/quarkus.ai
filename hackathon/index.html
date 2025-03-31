@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarkus MCP Hackathon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" >
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="top">
+        <nav class="nav">
+            <div class="logo">
+                <a href="#top" target="_blank">
+                    <img src="images/quarkus_logo.png" alt="Quarkus Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#educational-resources" class="nav-item">LEARN</a>
+                <a href="#mcp" class="nav-item">MCP</a>
+                <a href="#" class="nav-item" onclick="alert('Coming soon')">RULES</a>
+                <a href="#" class="nav-item" onclick="alert('Coming soon')">PRIZES</a>
+                <a href="#" class="nav-item start-coding" onclick="alert('Coming soon')">REGISTER</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                QUARKUS
+                MPC
+                HACKATHON
+            </h1>
+            <p class="hero-description">
+                Join us in revolutionizing Java development with AI! <br/>Build innovative 
+                solutions using Quarkus AI capabilities and compete with developers 
+                worldwide. Transform your ideas into lightning-fast, AI-powered 
+                applications.
+            </p>
+            <a href="#" class="hero-button">Register in the hackathon</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h2>Quarkus AI Benefits</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>LangChain4j Integration</h3>
+                <p>
+                    Seamlessly integrate AI capabilities into your Java applications with 
+                    Quarkus LangChain4j. Build powerful AI-driven features with native 
+                    support for LLMs, embeddings, and vector stores. Benefit from 
+                    Quarkus' developer-friendly features like hot reload, unified 
+                    configuration, and native compilation while creating sophisticated 
+                    AI workflows with minimal boilerplate code.
+                </p>
+            </div>
+            <div class="benefit-card">
+                <h3>Jllama Support</h3>
+                <p>
+                    Leverage the power of local Large Language Models with Quarkus' 
+                    Jllama integration. Run AI models directly on your infrastructure 
+                    with enhanced privacy and reduced latency. Take advantage of 
+                    Quarkus' efficient resource utilization while running Llama-based 
+                    models, perfect for organizations requiring on-premises AI 
+                    solutions or edge computing scenarios. Benefit from seamless 
+                    integration with other Quarkus AI capabilities while maintaining 
+                    full control over your AI infrastructure.
+                </p>
+            </div>
+            <div class="benefit-card">
+                <h3>Quarkus AI Extensions</h3>
+                <p>
+                    Explore a rich ecosystem of AI-focused extensions that 
+                    simplify integration with popular AI services and tools. 
+                    From OpenAI and Azure OpenAI extensions to Amazon Bedrock 
+                    and Google AI integrations, Quarkus provides ready-to-use 
+                    components for AI development. These extensions offer 
+                    type-safe APIs, automated configuration, and seamless 
+                    integration with Quarkus' development workflow, allowing 
+                    you to focus on building AI-powered features rather than 
+                    dealing with infrastructure complexities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MCP Section -->
+    <section class="testimonial" id="mcp">
+        <div class="testimonial-content">
+            <blockquote>
+                "The Model Context Protocol (MCP) is a groundbreaking project that acts as a bridge between AI models 
+                and real-world applications, enabling them to communicate seamlessly with various systems 
+                and services. The protocol's decoupled architecture ensures flexibility and scalability, 
+                while its compatibility with various MCP clients like Claude Desktop and mcp-cli makes it 
+                a versatile solution for modern AI development needs."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- TODO: Pending Rules Section -->
+
+    <!-- TODO: Pending Prices Section -->
+
+    <!-- Educational Resources Section -->
+    <section class="blog">
+        <h2 id="educational-resources">Educational Resources</h2>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <h3><a href="https://quarkus.io/blog/agentic-ai-with-quarkus-p2/" target="_blank">Agentic AI with Quarkus - part 2</a></h3>
+                <div class="blog-meta">
+                    <time>February 20, 2025</time>
+                </div>
+                <p class="author">By Mario fusco</p>
+                <p>
+                    The article explores agent patterns in Quarkus, 
+                    which differ from workflow patterns by letting LLMs orchestrate the control flow 
+                    instead of using programmatic definitions. The article demonstrates this through 
+                    three examples: a weather forecast agent that coordinates multiple services 
+                    to provide weather information, a general-purpose AI agent utilizing web search 
+                    capabilities for broader tasks, and a restaurant booking chatbot that manages 
+                    conversations with customers while handling reservations.
+                </p>
+            </article>
+            <article class="blog-card">
+                <h3><a href="https://quarkus.io/blog/agentic-ai-with-quarkus/" target="_blank">Agentic AI with Quarkus - part 1</a></h3>
+                <div class="blog-meta">
+                    <time>February 18, 2025</time>
+                </div>
+                <p class="author">By Mario fusco</p>
+                <p>
+                    The article discusses AI workflow patterns in Quarkus, 
+                    focusing on three main patterns: prompt chaining, parallelization, and routing. 
+                    Prompt chaining involves sequential LLM calls where output from one becomes 
+                    input for another (demonstrated with a creative writing example), 
+                    while parallelization allows independent LLM calls to run simultaneously 
+                    (shown with an evening planner combining movie and meal suggestions).
+                </p>
+            </article>
+            <article class="blog-card">
+                <h3><a href="https://quarkus.io/blog/introducing-mcp-servers/" target="_blank">Introducing Model Context Protocol servers project</a></h3>
+                <div class="blog-meta">
+                    <time>January 29, 2025</time>
+                </div>
+                <p class="author">By Max Rydahl Andersen</p>
+                <p>
+                    The article introduces the Model Context Protocol (MCP) servers project, 
+                    which enables AI models to interact with applications and services in a decoupled way. 
+                    The project currently features three Quarkus-based servers: a JDBC server for 
+                    database interactions, a Filesystem server for file system access, 
+                    and a JavaFX server for drawing capabilities. The project leverages 
+                    Quarkus's programming model, the extensive Java ecosystem, 
+                    and native executable capabilities to provide a powerful foundation 
+                    for building AI-powered applications.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <!-- Empty on purpose -->
+    </section>
+</body>
+</html> 
+<!-- Powered by Cursor AI -->
