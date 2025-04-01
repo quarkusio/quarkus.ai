@@ -56,13 +56,6 @@ header {
     font-size: 0.9rem;
 }
 
-.start-coding {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-}
-
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #FF004A 0%, #4695EB 100%);
@@ -118,13 +111,6 @@ header {
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     background: #f8f9fa;
-}
-
-.version {
-    background: rgba(255, 255, 255, 0.1);
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 8px;
 }
 
 /* Benefits Section */
@@ -246,6 +232,9 @@ cite {
     text-decoration: none;
 }
 
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
@@ -261,11 +250,21 @@ cite {
         grid-template-columns: 1fr;
     }
     
-    .company-logos {
-        gap: 1.5rem;
+
+        .detail-content {
+        padding: 5rem 1rem 1rem;
     }
-    
-    .company-logos img {
-        height: 30px;
+
+    .detail-content h1 {
+        font-size: 2rem;
+    }
+
+    .code-tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+        text-align: center;
     }
 } 

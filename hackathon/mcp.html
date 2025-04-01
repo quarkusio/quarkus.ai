@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Context Protocol (MCP) - Quarkus Hackathon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <style>
+        .content-section ul {
+            margin: 0;
+            padding-left: 2rem;
+            list-style-position: outside;
+        }
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="top">
+        <nav class="nav">
+            <div class="logo">
+                <a href="#top">
+                    <img src="images/quarkus_logo.png" alt="Quarkus Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="mcp.html" class="nav-item">MCP</a>
+                <a href="learn.html" class="nav-item">LEARN</a>
+                <a href="challenge.html" class="nav-item">THE CHALLENGE</a>
+                <a href="rules.html" class="nav-item">RULES</a>
+                <a href="prizes.html" class="nav-item">PRIZES</a>
+                <a href="#" class="nav-item start-coding" onclick="alert('Coming soon')">REGISTER</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="detail-content">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / MCP
+        </div>
+
+        <h1>MCP: Model Context Protocol</h1>
+
+        <section class="content-section">
+            <h2>What is Model Context Protocol?</h2>
+            <p>
+                MCP is an open protocol that standardizes how applications provide context to LLMs. 
+                Think of MCP like a USB-C port for AI applications. 
+                Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, 
+                MCP provides a standardized way to connect AI models to different data sources and tools.
+            </p>
+        </section>
+        <section class="content-section">
+            <h2>Why MCP?</h2>
+            <p>
+                MCP helps you build agents and complex workflows on top of LLMs. LLMs frequently need to integrate with data and tools, and MCP provides:
+            </p>
+            <ul>
+                <li>A growing list of pre-built integrations that your LLM can directly plug into</li>
+                <li>The flexibility to switch between LLM providers and vendors</li>
+                <li>Best practices for securing your data within your infrastructure</li>
+            </ul>
+        </section>
+        <section class="content-section">
+            <h2>General architecture</h2>
+
+            <p>
+                At its core, MCP follows a client-server architecture where a host application can connect to multiple servers:            </
+            </p>
+            <p>
+                <img src="images/mcp-architecture.png" width="50%" alt="MCP Architecture">
+            </p>
+            <ul>
+                <li>MCP Hosts: Programs like Claude Desktop, IDEs, or AI tools that want to access data through MCP</li>
+                <li>MCP Clients: Protocol clients that maintain 1:1 connections with servers</li>
+                <li>MCP Servers: Lightweight programs that each expose specific capabilities through the standardized Model Context Protocol</li>
+                <li>Local Data Sources: Your computer's files, databases, and services that MCP servers can securely access</li>
+                <li>Remote Services: External systems available over the internet (e.g., through APIs) that MCP servers can connect to</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+<!-- Powered by Cursor AI -->
